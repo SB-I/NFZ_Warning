@@ -1,0 +1,46 @@
+--version:1.4.0 --major, minor, bug fix
+
+--Known Bugs--
+• NFZ msg on docking/undocking
+
+
+--v.1.4.0
+• Added a "nfztoggle" command to turn the warnings on/off.
+• • "NFZ" starts enabled per login.
+• Messages no longer use the "Incoming Whisper" event, but instead print to the log.
+
+
+--v.1.3.1
+• Fix to the "Turret Spam"
+
+
+--v.1.3.0
+• Added "ENTER_ZONE_dock" for the 25m of dock space XD
+
+--v1.2.3
+• We no longer get a "Leaving NFZ" message upon docking a station \o/
+
+--v1.2.2
+• Corrected "ERR" displaying upon Zone swap/entering leaving a station.
+
+--v.1.2.1
+• Moved around some things, removed unneeded code.
+• Registered the "LEAVE_ZONE_dock" dock (Thought i did this awhile ago..)
+
+
+--v.1.2.0
+• Added Event check "ENTER_ZONE_dock" to "LEAVE_ZONE_NFZ"
+• • We now check if the reason you left the NFZ was to dock a station.
+
+• Added Event Check "LEAVE_ZONE_dock" to "ENTER_ZONE_NFZ"
+• • We now check if the reason you entered the NFZ was via Undocking.
+
+•  These checks were Necessary to prevent spam from docking/undocking.
+
+
+--v.1.1.0
+• Added an event to warn the user when exiting an NFZ.
+• Messages now post via "Incoming Whipser"
+
+--v.1.0.0
+• Added an event to warn the user when entering the NFZ.
